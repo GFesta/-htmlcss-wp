@@ -52,7 +52,7 @@ ul.menu li {
 }
 
 header {
-  height: 50vh;
+  height: 55vh;
   width: 100%;
   border-radius: 5px;
 }
@@ -78,27 +78,40 @@ header {
   line-height: 10px;
 }
 
-.testo {
-  color: grey;
-  float: left;
-}
-
 main {
-  height: 60vh;
+  height: 80vh;
 }
 
 #container1 {
   height: 10vh;
   width: 100%;
   margin: 5px 0;
-  border-radius: 5px
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  bottom: 70px;
+  left: 16px;
+}
+.paragraph {
+  position: absolute;
+  bottom: 35px;
+  left: 16px;
+}
+
+.title,
+.paragraph {
+  color: #6f6767;
 }
 
 #container2 {
   height: 50vh;
   width: 100%;
+  float: left;
+  width: auto;
   display: flex;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #6f676745;
 }
 
 .colonna1 {
@@ -109,13 +122,14 @@ main {
   border-radius: 5px;
   background-position: center;
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.1);
 
 }
 
 .colonna2 {
   background-image: url("../img/banner-2.jpg");
   height: 20vh;
-  width: 60%;
+  width: auto;
   margin: 20px;
   border-radius: 5px;
   background-position: center;
@@ -135,6 +149,6 @@ main {
 footer {
   height: 10vh;
   width: 100%;
-  background-color: #42a62dc2;
-  border-radius: 5px;
+  color: red;
+  text-align: center;
 }
