@@ -53,7 +53,7 @@ ul.menu li {
 }
 
 header {
-  height: 55vh;
+  height: 70vh;
   width: 100%;
   border-radius: 5px;
 }
@@ -65,18 +65,16 @@ header {
 
 .banner {
   position: relative;
-  height: 500px;
+  height: 370px;
   color: white;
   border-radius: 10px;
   overflow: hidden;
 }
-
 .banner img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .banner-text {
   position: absolute;
   bottom: 20px;
@@ -95,12 +93,6 @@ header {
   height: 100%;
 }
 
-.titolo {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 10px;
-}
-
 .clearfix::after {
   content: "";
   clear: both;
@@ -111,76 +103,47 @@ main {
   height: 80vh;
 }
 
-#container1 {
-  width: 100%;
-  margin: 5px 0;
-  position: relative;
-}
-
 .title {
   position: absolute;
   bottom: 70px;
-  left: 16px;
-}
-.paragraph {
-  position: absolute;
-  bottom: 35px;
-  left: 16px;
+  margin: 20px 0;
 }
 
-.title,
-.paragraph {
-  color: #6f6767;
+.col {
+  float: left;
 }
-
-#container2 {
-  width: 100%;
-  width: auto;
-  display: flex;
-}
-
-
-.colonna1,
-.colonna3 {
-  width: 20%;
-  padding: 10px 20px;
-}
-
-.colonna1 {
-  background-image: url("../img/img-1.jpg");
-  height: 20vh;
-  width: 40%;
-  margin: 20px;
-  border-radius: 5px;
-  background-position: center;
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.colonna2 {
-  background-image: url("../img/banner-2.jpg");
-  height: 20vh;
-  width: auto;
-  margin: 20px;
-  border-radius: 5px;
-  background-position: center;
-  background-size: cover;
-}
-
-.colonna3 {
-  background-image: url("../img/img-3.jpg");
-  height: 20vh;
-  width: 40%;
-  margin: 20px;
-  border-radius: 5px;
-  background-position: center;
-  background-size: cover;
+.col:first-child {
+  padding: 10px 10px 10px 0;
 }
 
 .left,
 .right {
   float: left;
-  width: 60%;
+  width: 20%;
+  margin: 10px;
+}
+.middle {
+  float: left;
+  width: 54%;
+  margin: 8px;
+  padding: 0 20px;
+}
+
+.col-image {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.col-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.col-text {
+  margin-top: 10px;
+}
+.col-text h4 {
+  margin-bottom: 10px;
 }
 
 footer {
